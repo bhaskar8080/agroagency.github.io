@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/fevi.png">
+	<title>Purchase Form</title>
+	<style type="text/css">
+		body
+		{
+			background: url("p/1.jpg");
+		}
+		h1
+		{
+			color: white;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+		}
+		label
+		{
+			color:white;
+			font-size: 20px;
+		}
+		input[type="text"]
+		{
+			border-radius:15px;
+			outline: none;
+			height: 5vh;
+			width:25vw;
+		}
+               	textarea{
+			border-radius:15px;
+			
+		      }
+                        
+		.b1
+		{
+			height: 25px;
+			width: 100px;
+			background-color: blue;
+			color: white;
+			outline: none;
+			border-radius: 10px;
+		}
+		.b1:hover
+		{
+			background-color: green;
+			cursor: pointer;
+		}
+		table tr td
+		{
+	        padding: 10px;
+		}
+                .aa{
+       	             background-color:rgba(10,200,444,444);
+       	             border-radius:4px;  
+                   }
+               .aa:hover{
+       	            background-color:white; 
+                    }
+	</style>
+</head>
+<body>
+    	<div align="center">
+            <a href="mview.jsp"><font size="5" class="aa">Medicin</font></a>
+            <a href="fview.jsp"><font size="5" class="aa">Fertilize</font></a>
+            <a href="sview.jsp"><font size="5" class="aa">Seed</font></a>
+        </div>
+    
+	<h1>Purchase Product</h1>
+	<hr>
+        
+	<form action="purchase.jsp" method="POST">
+		<table align="center">
+			<tr>
+				<td>
+					<label>Customer Name</label>
+				</td>
+				<td>
+					<input type="text" name="cname" required>
+				</td>
+			</tr>
+                        
+                          <tr>
+                              <td><label>Full Address</label></td>
+ 		               <td><textarea rows="5" cols="40" name="address" 	required></textarea></td>
+ 	                </tr>
+			
+			<tr>
+				<td>
+					<label>Mobile no</label> 
+				</td>
+				<td>
+					<input type="text" name="mobile" required>
+				</td>
+			</tr>
+                        
+                         <tr>
+                  		<td>
+					<label>Adhar no</label> 
+				</td>
+				<td>
+					<input type="text" name="adhar" required>
+				</td>
+			</tr>
+                        <tr>
+                  		<td>
+					<label>Product name</label> 
+				</td>
+				<td>
+					<input type="text" name="product" required>
+				</td>
+			</tr>
+                        <tr>
+                  		<td>
+					<label>Quantity</label> 
+				</td>
+				<td>
+					<input type="text" name="quantity" required>
+				</td>
+			</tr>
+                        <tr>
+                  		<td>
+					<label>Delivery Date</label> 
+				</td>
+				<td>
+					<input type="text" name="date" required>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"> 
+				</td>
+				<td align="center">
+                                       <input type="submit" name="b1" class="b1"value="Purchase">
+                                       <input type="reset" name="b1" class="b1" value="Cancel">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

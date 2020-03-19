@@ -1,0 +1,21 @@
+.body{
+    background-color: gray;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    
+}
+
+
+.header{
+    background-color: gray;
+    position:relative;
+    align-items: center;
+    font-family: helvatica,arial;
+    font-size: 40px;
+    text-align: center;
+    text-height: 20px;
+   
+    
+}

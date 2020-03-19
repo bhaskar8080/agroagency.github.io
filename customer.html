@@ -1,0 +1,90 @@
+<html>
+<script language="javascript">
+  function del()
+   { 
+  if (f1.id.value==0)
+  {
+     alert("plz enter cid")
+       return
+  }
+   else   
+    {      
+     document.forms['f1'].action="cdelete.jsp";
+     document.forms['f1'].submit();
+    }  
+   }
+  function up()
+   {
+            if (f1.id.value==0)
+        {
+     alert("plz enter cid");
+       return
+       }
+       else
+       {  
+   document.forms['f1'].action="cupdate.jsp";
+    document.forms['f1'].submit();
+      }
+  }   
+ 
+  function search()
+   {
+       if (f1.id.value==0)
+  {
+     alert("plz enter cid");
+       return
+  }
+   else   
+    {    
+   document.forms['f1'].action="csearch.jsp";
+    document.forms['f1'].submit();
+   }
+ } 
+ function save()
+ {
+       if (f1.id.value==0)
+  {
+     alert("plz enter cid");
+       return
+  }
+    else   
+    {    
+   document.forms['f1'].action="csave.jsp";
+    document.forms['f1'].submit();
+   }
+ } 
+ 
+  </script>
+
+<body bgcolor="navyblue">
+    <form name="f1">
+    <center><br><br><br>
+        <table width="30%" height="40%">
+            <tr>
+              <td>Customer Id:</td>
+              <td><input type="text" name="id"></td>
+            </tr>
+              
+            <tr>
+              <td>Name:</td>
+              <td><input type="text" name="fname"></td>
+            </tr>
+            
+            <tr>
+              <td>Address:</td> 
+              <td><input type="text" name="address"></td>
+            </tr>
+            
+            <tr>
+              <td>Phone No:</td>
+              <td><input type="text" name="no"></td> 
+            </tr> 
+        </table>
+    <input type="button" value="Save" onclick="save()">
+    <input type="button" value="Update"onClick="up()">
+    <input type="button" value="Delete"onclick="del()">
+    <input type="button" value="Search"onClick="search()">
+    </center>
+ </form>
+</body>
+</html>    

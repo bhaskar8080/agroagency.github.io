@@ -1,0 +1,103 @@
+<body bgcolor="LIGHTGRAY">
+ <script language="javascript">
+  function del()
+   { 
+  if (f1.fname.value==0)
+  {
+     alert("plz enter name")
+       return
+  }
+   else   
+   {      
+     document.forms['f1'].action="mdelete.jsp";
+    document.forms['f1'].submit();
+  }  
+   }
+  function up()
+   {
+       if (f1.fname.value==0)
+  {
+     alert("plz enter name")
+       return
+  }
+   else   
+   {   
+   document.forms['f1'].action="mupdate.jsp";
+    document.forms['f1'].submit();
+   }
+   }
+  function search()
+   {
+       if (f1.fname.value==0)
+  {
+     alert("plz enter name")
+       return
+  }
+   else   
+   {   
+   document.forms['f1'].action="msearch.jsp";
+    document.forms['f1'].submit();
+   }
+  } 
+  function save()
+   {
+     if (f1.fname.value==0)
+     {
+     alert("plz enter name")
+       return
+    }
+   else   
+   {  
+   document.forms['f1'].action="msave.jsp";
+    document.forms['f1'].submit();
+   }
+ }
+</script>
+   
+<form name="f1">
+    <center>          
+    <br><br><br><br>
+    <table width="30%" height="40%">
+       
+       <tr>
+           <td>Name:</td>
+           <td><input type="text" name="fname"> </td>
+        </tr>
+        
+       <tr>
+           <td>Exp-Date:</td>
+           <td><input type="text" name="date"></td> 
+       </tr>
+       
+       <tr>
+           <td>Package:</td>
+           <td><input type="text" name="no"> </td>
+       </tr>
+       <tr>
+       <td> Nationality:</td>
+       <td><select name="nationality"width="50">
+                  <option>India</option>
+                  <option>Americka</option>
+                  <option>Australia</option>
+           </select></td>
+       
+   </tr>
+        <tr>
+           <td>Quantity:</td>
+           <td><input type="text" name="que"> 
+           </td>
+        </tr>
+        <tr>
+           <td> Prize(per product):</td>
+           <td><input type="text" name="id"></td> 
+       </tr>
+       
+     </table>
+     <input type="button" value="Save" onclick="save()">
+    <input type="button" value="Update" onclick="up()">
+    <input type="button" value="Delete" onclick="del()">
+    <input type="button" value="Search" onclick="search()"> 
+    </center>
+ </form>
+</body>
+    
